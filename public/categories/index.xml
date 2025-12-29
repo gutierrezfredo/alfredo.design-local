@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Alfredo Design</title>
+    <link>http://localhost:1314/categories/</link>
+    <description>Recent content in Categories on Alfredo Design</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Dec 2025 16:12:21 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1314/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Case-Studies</title>
+      <link>http://localhost:1314/categories/case-studies/</link>
+      <pubDate>Sat, 27 Dec 2025 23:01:18 -0600</pubDate>
+      <guid>http://localhost:1314/categories/case-studies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blogs</title>
+      <link>http://localhost:1314/categories/blogs/</link>
+      <pubDate>Sun, 01 May 2022 10:09:00 -0600</pubDate>
+      <guid>http://localhost:1314/categories/blogs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logs</title>
+      <link>http://localhost:1314/categories/logs/</link>
+      <pubDate>Mon, 26 Mar 2018 13:37:00 -0600</pubDate>
+      <guid>http://localhost:1314/categories/logs/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

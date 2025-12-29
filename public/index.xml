@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alfredo Design</title>
+    <link>http://localhost:1314/</link>
+    <description>Recent content on Alfredo Design</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Dec 2025 16:58:14 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1314/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Work</title>
+      <link>http://localhost:1314/work/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:14 -0600</pubDate>
+      <guid>http://localhost:1314/work/</guid>
+      <description>&lt;p&gt;Redirects to home&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1314/about/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/about/</guid>
+      <description>&lt;p&gt;I’m Alfredo Gutierrez, a product designer. Currently designing operational software for the surrogacy industry at &lt;a href=&#34;https://www.orchidsoftsolutions.com/&#34;&gt;Orchid Software Solutions&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Over the past 7 years, I&amp;rsquo;ve helped scale startups and companies by developing custom, reliable software that streamlines business processes across healthcare, surrogacy, legal services, and government contracting industries.&lt;/p&gt;&#xA;&lt;p&gt;Outside of work, I’m passionate about surfing, music, learning languages, photography, traveling, and poetry.&lt;/p&gt;&#xA;&lt;p&gt;I share my thoughts and tutorials on design, projects, and personal life on my &lt;a href=&#34;https://alfredo.design/blog/&#34;&gt;blog&lt;/a&gt;. You can also see what I’m currently working on in my &lt;a href=&#34;https://alfredo.design/logs/&#34;&gt;professional changelog&lt;/a&gt;.&#xA;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>http://localhost:1314/blog/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/blog/</guid>
+      <description>&lt;!-- Config in theme files --&gt;</description>
+    </item>
+    <item>
+      <title>Subscribe</title>
+      <link>http://localhost:1314/subscribe/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/subscribe/</guid>
+      <description>&lt;p&gt;Subscribe to the email newsletter for this blog.&lt;/p&gt;&#xA;&lt;form method=&#34;POST&#34; action=&#34;https://micro.blog/users/subscribe/281589&#34;&gt;&#xA;  &lt;input type=&#34;text&#34; name=&#34;email&#34; size=&#34;30&#34; placeholder=&#34;Your email address&#34; /&gt; &#xA;  &lt;input type=&#34;submit&#34; value=&#34;Subscribe&#34; /&gt;&#xA;&lt;/form&gt;</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1314/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1314/search/</guid>
+      <description>&lt;script language=&#34;javascript&#34;&gt;&#xA;&#xA;var archive_results = {};&#xA;&#xA;function runSearch(q) {&#xA;&#x9;let results_node = document.getElementById(&#34;list_results&#34;);&#xA;&#x9;results_node.innerHTML = &#34;&#34;;&#xA;&#x9;if (q.length &gt; 0) {&#xA;&#x9;&#x9;// split query into lowercase words&#xA;&#x9;&#x9;let keywords = q.toLowerCase().trim().split(/\s+/);&#xA;&#xA;&#x9;&#x9;for (let i = 0; i &lt; archive_results.items.length; i++) {&#xA;&#x9;&#x9;&#x9;let item = archive_results.items[i];&#xA;&#x9;&#x9;&#x9;let title_lower = item.title.toLowerCase();&#xA;&#x9;&#x9;&#x9;let text_lower = item.content_text.toLowerCase();&#xA;&#xA;&#x9;&#x9;&#x9;// combine title and text into one searchable string&#xA;&#x9;&#x9;&#x9;let full_text = title_lower + &#34; &#34; + text_lower;&#xA;&#xA;&#x9;&#x9;&#x9;// check if every keyword exists&#xA;&#x9;&#x9;&#x9;let match = keywords.every(function(k) {&#xA;&#x9;&#x9;&#x9;&#x9;return full_text.includes(k);&#xA;&#x9;&#x9;&#x9;});&#xA;&#xA;&#x9;&#x9;&#x9;if (match) {&#xA;&#x9;&#x9;&#x9;&#x9;let p_node = document.createElement(&#34;p&#34;);        &#xA;&#x9;&#x9;&#x9;&#x9;let link_node = document.createElement(&#34;a&#34;);&#xA;&#x9;&#x9;&#x9;&#x9;let d = Date.parse(item.date_published);&#xA;&#x9;&#x9;&#x9;&#x9;let date_s = new Date(d).toISOString().substr(0, 10);&#xA;&#x9;&#x9;&#x9;&#x9;let date_node = document.createTextNode(date_s); &#xA;&#x9;&#x9;&#x9;&#x9;link_node.appendChild(date_node);&#xA;&#x9;&#x9;&#x9;&#x9;link_node.href = item.url;&#xA;              &#x9;let title_node = null;&#xA;&#x9;&#x9;&#x9;&#x9;if (item.title.length &gt; 0) {&#xA;              &#x9;&#x9;title_node = document.createElement(&#34;span&#34;);&#xA;                  &#x9;title_node.innerHTML = &#34;: &lt;b&gt;&#34; + item.title + &#34;&lt;/b&gt;&#34;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;let s = item.content_text;&#xA;&#x9;&#x9;&#x9;&#x9;if (s.length &gt; 200) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;s = s.substr(0, 200) + &#34;...&#34;;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;              &#x9;let text_node = document.createElement(&#34;span&#34;);&#xA;             &#x9;text_node.innerHTML = &#34;: &#34; + s&#xA;&#x9;&#x9;&#x9;&#x9;p_node.appendChild(link_node);&#xA;              &#x9;if (title_node != null) {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;p_node.appendChild(title_node);&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;&#x9;p_node.appendChild(text_node);&#xA;&#x9;&#x9;&#x9;&#x9;results_node.appendChild(p_node);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;function submitSearch(q) {&#xA;&#x9;runSearch(q);&#xA;&#x9;&#xA;&#x9;// push query into URL&#xA;&#x9;const url = new URL(window.location.href);&#xA;&#x9;url.searchParams.set(&#34;q&#34;, q);&#xA;&#x9;history.pushState({}, &#34;&#34;, url);&#xA;}&#xA;&#xA;document.addEventListener(&#34;DOMContentLoaded&#34;, function() {&#xA;&#x9;let loading_timer = setTimeout(function() {&#xA;&#x9;&#x9;// show status text if archive doesn&#39;t load very quickly&#xA;&#x9;&#x9;document.getElementById(&#34;list_loading&#34;).style.display = &#34;flex&#34;;&#xA;&#x9;}, 1500);&#xA;&#xA;&#x9;fetch(&#34;/archive/index.json&#34;).then(response =&gt; response.json()).then(data =&gt; {&#xA;&#x9;&#x9;archive_results = data;&#xA;&#xA;&#x9;&#x9;clearTimeout(loading_timer);&#xA;&#x9;&#x9;document.getElementById(&#34;list_loading&#34;).style.display = &#34;none&#34;;&#xA;&#xA;&#x9;&#x9;// restore from search args&#xA;&#x9;&#x9;const url = window.location.href;&#xA;&#x9;&#x9;const params = new URLSearchParams(new URL(url).search);&#xA;&#x9;&#x9;const q = params.get(&#34;q&#34;);&#xA;&#x9;&#x9;if (q &amp;&amp; (q.length &gt; 0)) {&#xA;&#x9;&#x9;&#x9;document.getElementById(&#34;input_search&#34;).value = q;&#xA;&#x9;&#x9;&#x9;runSearch(q);&#xA;&#x9;&#x9;}&#xA;&#x9;});&#xA;});&#xA;&#x9;&#xA;&lt;/script&gt;&#xA;&lt;style&gt;&#xA;&#xA;#search {&#xA;&#x9;display: none;&#xA;}&#xA;&#xA;form {&#xA;&#x9;display: flex;&#xA;&#x9;justify-content: center;&#xA;}&#xA;&#xA;#list_loading {&#xA;&#x9;display: none;&#xA;&#x9;font-size: 14px;&#xA;&#x9;justify-content: center;&#xA;}&#xA;&#xA;.field {&#xA;&#x9;width: 270px;&#xA;&#x9;height: 34px;&#xA;&#x9;font-size: 13px;&#xA;&#x9;font-weight: 400;&#xA;&#x9;padding-left: 12px;&#xA;&#x9;border: 2px solid #eee;&#xA;&#x9;margin-top: 20px;&#xA;&#x9;margin-bottom: 20px;&#xA;&#x9;border-radius: 17px;&#xA;&#x9;-webkit-appearance: none;&#xA;}&#xA;&#xA;&lt;/style&gt;&#xA;&lt;form onSubmit=&#34;return false;&#34;&gt;&#xA;&#x9;&lt;input class=&#34;field&#34; type=&#34;text&#34; name=&#34;q&#34; id=&#34;input_search&#34; placeholder=&#34;Search&#34; onChange=&#34;submitSearch(this.value.toLowerCase());&#34;&gt;&#xA;&lt;/form&gt;&#xA;&lt;div id=&#34;list_loading&#34;&gt;&#xA;&#x9;Loading posts...&#xA;&lt;/div&gt;&#xA;&lt;div id=&#34;list_results&#34;&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Archive</title>
+      <link>http://localhost:1314/archive/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/archive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1314/contact/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/contact/</guid>
+      <description>&lt;p&gt;To contact me feel free to send me an email at &lt;a href=&#34;mailto:alfredo@alfredo.design&#34;&gt;alfredo@alfredo.design&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;or use the contact form below:&lt;/p&gt;&#xA;&lt;script data-letterbirduser=&#34;alfredo&#34; src=&#34;https://letterbird.co/embed/v1.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1314/intro/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/intro/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://alfredo.design/uploads/2025/16e37fd268.png&#34; alt=&#34;profile.png&#34;&gt;&lt;/p&gt;&#xA;&lt;h1&gt;&lt;span&gt;hey!&lt;/span&gt; &lt;span&gt;Alfredo&lt;/span&gt; &lt;span&gt;here.&lt;/span&gt;&lt;/h1&gt;&#xA;## A Product Designer&#xA;&lt;p&gt;Creating digital products for startups and designing websites that support brands&amp;rsquo; marketing strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Logs</title>
+      <link>http://localhost:1314/logs/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/logs/</guid>
+      <description>&lt;pre&gt;&lt;code&gt;/* Config in theme files */&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Not Found</title>
+      <link>http://localhost:1314/404.html</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/404.html</guid>
+      <description>&lt;div class=&#34;error-page&#34;&gt;&#xA;      &lt;h1 class=&#34;error-code&#34;&gt;404&lt;/h1&gt;&#xA;      &lt;p class=&#34;error-message&#34;&gt;Page not found&lt;/p&gt;&#xA;      &lt;p class=&#34;error-description&#34;&gt;The page you&#39;re looking for doesn&#39;t exist or has been moved.&lt;/p&gt;&#xA;      &lt;a href=&#34;http://localhost:1314/&#34; class=&#34;error-link&#34;&gt;Go back home&lt;/a&gt;&#xA;  &lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Photos</title>
+      <link>http://localhost:1314/photos/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/photos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Social</title>
+      <link>http://localhost:1314/social/</link>
+      <pubDate>Sun, 28 Dec 2025 16:58:10 -0600</pubDate>
+      <guid>http://localhost:1314/social/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1314/contact&#34;&gt;&lt;i class=&#34;fas fa-envelope&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;https://linkedin.com/in/gutifredo&#34;&gt;&lt;i class=&#34;fab fa-linkedin&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;https://twitter.com/gutifredo&#34;&gt;&lt;i class=&#34;fab fa-x-twitter&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;https://mastodon.design/@alfredo&#34;&gt;&lt;i class=&#34;fab fa-mastodon&#34;&gt;&lt;/i&gt;&lt;/a&gt;&#xA;&lt;a href=&#34;https://bsky.app/profile/alfredo.design&#34;&gt;&lt;i class=&#34;fab fa-bluesky&#34;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Content Emotion Analyzer</title>
+      <link>http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html</link>
+      <pubDate>Sat, 27 Dec 2025 23:01:18 -0600</pubDate>
+      <guid>http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html</guid>
+      <description>&lt;p&gt;Web design for Watsonfinds a sentiment analysis that predicts the evoked emotions by a piece of content.&lt;/p&gt;&#xA;&lt;p&gt;IBM was one of the first companies who started building solutions with artificial intelligence and I was amazed by this new approach, specially by the &lt;a href=&#34;https://tone-analyzer-demo.ng.bluemix.net/?cm_mc_uid=38480465967815654102949&amp;amp;cm_mc_sid_50200000=31230421565410294965&amp;amp;cm_mc_sid_52640000=39140861565410294987&#34;&gt;Tone Analyzer&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Inspired by this, Max Ortu and I, had the idea to create a sentiment analysis that could provide, to authors, copywriters and all kinds of content creators, insights about the emotional tones of their content and a way to determine the emotions that their audience may perceive as they read it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Social Sentiment Dashboard</title>
+      <link>http://localhost:1314/2025/12/27/social-sentiment-dashboard.html</link>
+      <pubDate>Sat, 27 Dec 2025 22:57:34 -0600</pubDate>
+      <guid>http://localhost:1314/2025/12/27/social-sentiment-dashboard.html</guid>
+      <description>&lt;p&gt;UX/UI design of a web app that tells social media influencers how people feel about their brands.&lt;/p&gt;&#xA;&lt;p&gt;A web app that works as a social media sentiment analysis tool to inform companies and influencers about how people feel regarding their brands by analyzing the emotional tone of the comments made by their audiences on their posts.&lt;/p&gt;&#xA;&lt;p&gt;The app will use AI to scan and analyze every comment made on a specific post and show the predominant emotion. This will allow influencers and large accounts to filter comments by emotions and reach out to individuals who may be having a challenging experience with their brand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GovOps Contractor Portal</title>
+      <link>http://localhost:1314/2025/12/27/govops-contractor-portal.html</link>
+      <pubDate>Sat, 27 Dec 2025 22:48:10 -0600</pubDate>
+      <guid>http://localhost:1314/2025/12/27/govops-contractor-portal.html</guid>
+      <description>&lt;p&gt;UX/UI design of a web app that helps contractors find and manage government business opportunities.&lt;/p&gt;&#xA;&lt;p&gt;I was hired by FBO Biz to design a cloud-base solution that would bring a better way of managing and winning government contracts. &lt;/p&gt;&#xA;&lt;p&gt;The biggest challenge was that the public solicitations published by the government had lack of organization. That’s why my aim was to design a product where the user could easily find and bid on solicitations, and at the same time maintaining an organized workflow during the bidding process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD</title>
+      <link>http://localhost:1314/2022/05/01/my-alternative-solution-for-reverting.html</link>
+      <pubDate>Sun, 01 May 2022 10:09:00 -0600</pubDate>
+      <guid>http://localhost:1314/2022/05/01/my-alternative-solution-for-reverting.html</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://alfredo.design/uploads/2025/final-1030x681.jpg&#34; alt=&#34;final-1030x681.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I use Adobe XD regularly for my full-time job, while Figma is my go-to for personal projects. Consequently, I’m eternally oscillating between these two apps on a daily basis.&lt;/p&gt;&#xA;&lt;p&gt;Having spent the whole day on Adobe XD, transitioning to Figma is somewhat peculiar due to the contrasting scrolling direction for zoom-in and zoom-out operations. Although neither direction seems inherently correct or incorrect, for some reason, Figma’s method appears more intuitive to me.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>More posts coming very soon!</title>
+      <link>http://localhost:1314/2018/03/26/more-posts-coming-very-soon.html</link>
+      <pubDate>Mon, 26 Mar 2018 13:37:00 -0600</pubDate>
+      <guid>http://localhost:1314/2018/03/26/more-posts-coming-very-soon.html</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m currently working on this section and getting ready a couple of blog posts about UX design, tools, and productivity&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

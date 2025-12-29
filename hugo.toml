@@ -1,0 +1,23 @@
+baseURL = "http://localhost:1314/"
+title = "Alfredo Design"
+theme = "design"
+languageCode = "en"
+
+[pagination]
+  pagerSize = 25
+
+[params]
+  description = "Design portfolio"
+  about_me = "Designer by day, poet by night."
+  theme_seconds = "1234567890"
+  portfolio_intro = "Creating digital products for startups and designing websites that support brands' marketing strategies."
+
+  [params.author]
+    name = "Alfredo Gutiérrez"
+    avatar = "https://micro.blog/alfredo/avatar.jpg"
+    username = "alfredo"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

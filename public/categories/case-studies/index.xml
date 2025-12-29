@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Case-Studies on Alfredo Design</title>
+    <link>http://localhost:1314/categories/case-studies/</link>
+    <description>Recent content in Case-Studies on Alfredo Design</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Dec 2025 01:21:25 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1314/categories/case-studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Content Emotion Analyzer</title>
+      <link>http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html</link>
+      <pubDate>Sat, 27 Dec 2025 23:01:18 -0600</pubDate>
+      <guid>http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html</guid>
+      <description>&lt;p&gt;Web design for Watsonfinds a sentiment analysis that predicts the evoked emotions by a piece of content.&lt;/p&gt;&#xA;&lt;p&gt;IBM was one of the first companies who started building solutions with artificial intelligence and I was amazed by this new approach, specially by the &lt;a href=&#34;https://tone-analyzer-demo.ng.bluemix.net/?cm_mc_uid=38480465967815654102949&amp;amp;cm_mc_sid_50200000=31230421565410294965&amp;amp;cm_mc_sid_52640000=39140861565410294987&#34;&gt;Tone Analyzer&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Inspired by this, Max Ortu and I, had the idea to create a sentiment analysis that could provide, to authors, copywriters and all kinds of content creators, insights about the emotional tones of their content and a way to determine the emotions that their audience may perceive as they read it.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Social Sentiment Dashboard</title>
+      <link>http://localhost:1314/2025/12/27/social-sentiment-dashboard.html</link>
+      <pubDate>Sat, 27 Dec 2025 22:57:34 -0600</pubDate>
+      <guid>http://localhost:1314/2025/12/27/social-sentiment-dashboard.html</guid>
+      <description>&lt;p&gt;UX/UI design of a web app that tells social media influencers how people feel about their brands.&lt;/p&gt;&#xA;&lt;p&gt;A web app that works as a social media sentiment analysis tool to inform companies and influencers about how people feel regarding their brands by analyzing the emotional tone of the comments made by their audiences on their posts.&lt;/p&gt;&#xA;&lt;p&gt;The app will use AI to scan and analyze every comment made on a specific post and show the predominant emotion. This will allow influencers and large accounts to filter comments by emotions and reach out to individuals who may be having a challenging experience with their brand.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GovOps Contractor Portal</title>
+      <link>http://localhost:1314/2025/12/27/govops-contractor-portal.html</link>
+      <pubDate>Sat, 27 Dec 2025 22:48:10 -0600</pubDate>
+      <guid>http://localhost:1314/2025/12/27/govops-contractor-portal.html</guid>
+      <description>&lt;p&gt;UX/UI design of a web app that helps contractors find and manage government business opportunities.&lt;/p&gt;&#xA;&lt;p&gt;I was hired by FBO Biz to design a cloud-base solution that would bring a better way of managing and winning government contracts. &lt;/p&gt;&#xA;&lt;p&gt;The biggest challenge was that the public solicitations published by the government had lack of organization. That’s why my aim was to design a product where the user could easily find and bid on solicitations, and at the same time maintaining an organized workflow during the bidding process.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

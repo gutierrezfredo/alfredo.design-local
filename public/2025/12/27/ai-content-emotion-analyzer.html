@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Mythos Theme v1.4.14">
+
+    
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    
+    
+    <meta name="twitter:card" content="summary"><meta name="twitter:title" content="AI Content Emotion Analyzer">
+      <meta property="og:title" content="AI Content Emotion Analyzer">
+    
+    
+      <meta name="twitter:description" content="Web design for Watsonfinds a sentiment analysis that …">
+      <meta name="og:description" content="Web design for Watsonfinds a sentiment analysis that …">
+      <meta name="description" content="Web design for Watsonfinds a sentiment analysis that predicts the evoked emotions by a piece of content.
+IBM was one of the first companies who started building solutions with artificial intelligence and I was amazed by this new approach, specially by the Tone Analyzer.
+Inspired by this, Max Ortu and I, had the idea to create a sentiment analysis that could provide, to authors, copywriters and all kinds of content creators, insights about the emotional tones of their content and a way to determine the emotions that their audience may perceive as they read it.">
+      <meta name="twitter:image" content="https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg">
+          <meta property="og:image" content="https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg"><meta name="twitter:image" content="https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg">
+          <meta property="og:image" content="https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg"><meta name="twitter:image" content="https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg">
+          <meta property="og:image" content="https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg"><title>AI Content Emotion Analyzer | Alfredo Design</title>
+
+    
+    <link rel="author" href="/humans.txt">
+
+    
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    
+    <link rel="stylesheet" href="/css/main.css?1234567890">
+    
+    
+    
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1314/feed.xml" title="Alfredo Design">
+    
+    
+    <link rel="canonical" href="http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html">
+    
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html">
+    <meta property="og:site_name" content="Alfredo Design">
+    
+    
+  <link rel="alternate" href="http://localhost:1314/feed.xml" type="application/rss+xml" title="Alfredo Design">
+  <link rel="alternate" href="http://localhost:1314/feed.json" type="application/json" title="Alfredo Design">
+
+
+
+
+<link rel="me" href="https://micro.blog/">
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+    
+      
+    
+  
+
+
+<link rel="shortcut icon" href="https://alfredo.design/uploads/2025/16e37fd268.png" type="image/png">
+<link rel="icon" href="https://alfredo.design/uploads/2025/16e37fd268.png" type="image/png">
+<link rel="apple-touch-icon" href="https://alfredo.design/uploads/2025/16e37fd268.png">
+<link rel="EditURI" type="application/rsd+xml" href="http://localhost:1314/rsd.xml">
+<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth">
+<link rel="token_endpoint" href="https://micro.blog/indieauth/token">
+<link rel="subscribe" href="https://micro.blog/users/follow">
+<link rel="webmention" href="https://micro.blog/webmention">
+<link rel="micropub" href="https://micro.blog/micropub">
+<link rel="microsub" href="https://micro.blog/microsub">
+
+
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<link rel="stylesheet" href="/custom.css?1234567890">
+
+
+
+
+
+    
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    
+    
+</head>
+
+<body class="no-js">
+    <script>
+        document.body.className = document.body.className.replace('no-js', 'js');
+        
+        (function() {
+            var tints = [
+                'rgba(99, 179, 237, 0.08)',   
+                'rgba(154, 230, 180, 0.08)',  
+                'rgba(246, 173, 85, 0.08)',   
+                'rgba(183, 148, 244, 0.08)'   
+            ];
+            var darkTints = [
+                'rgba(99, 179, 237, 0.12)',
+                'rgba(154, 230, 180, 0.12)',
+                'rgba(246, 173, 85, 0.12)',
+                'rgba(183, 148, 244, 0.12)'
+            ];
+            var idx = Math.floor(Math.random() * tints.length);
+            var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            document.documentElement.style.setProperty('--subscribe-tint', isDark ? darkTints[idx] : tints[idx]);
+            document.documentElement.style.setProperty('--subscribe-tint-idx', idx);
+        })();
+    </script>
+    <header class="site-header">
+    <div class="header-container h-card">
+        <div class="site-branding">
+            <div class="site-info">
+                
+                <a href="/" class="back-button" aria-label="Go back" onclick="event.preventDefault(); history.back();">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    <span>Back</span>
+                </a>
+                
+            </div>
+        </div>
+        
+        <nav class="site-navigation" aria-label="Main navigation">
+            
+            <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-input" aria-hidden="true">
+            <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open main navigation menu">
+                <span class="menu-toggle-text">Menu</span>
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </label>
+
+            
+            <button class="menu-toggle js-menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Open main navigation menu" type="button" style="display: none;">
+                <span class="menu-toggle-text">Menu</span>
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div class="menu-backdrop" id="menu-backdrop"></div>
+            <div class="primary-menu" id="primary-menu" role="menu" aria-label="Navigation menu">
+                <div class="menu-content">
+                    <ul class="nav-menu">
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/work/" class="nav-link Work" role="menuitem">
+                                
+                                Work
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/about/" class="nav-link About" role="menuitem">
+                                
+                                About
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/blog/" class="nav-link Blog" role="menuitem">
+                                
+                                Blog
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/subscribe/" class="nav-link Subscribe" role="menuitem">
+                                
+                                Subscribe
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/search/" class="nav-link Search" role="menuitem">
+                                
+                                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                                <span class="icon-label">Search</span>
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-divider" aria-hidden="true"></li>
+                        <li class="nav-item nav-item-toggle" role="none">
+                            <a href="#" id="theme-toggle" class="nav-link theme-toggle-link" role="menuitem" aria-label="Toggle dark mode">
+                                <span class="toggle-prefix">Appearance</span>
+                                <svg class="toggle-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                                <svg class="toggle-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                                <svg class="toggle-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                                <span class="icon-label toggle-label-light">Light</span>
+                                <span class="icon-label toggle-label-dark">Dark</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    
+
+    <main class="main-content">
+        
+<article class="post h-entry">
+    <header class="post-header">
+        
+        <h2 class="post-title p-name">AI Content Emotion Analyzer</h2>
+        
+        
+        <div class="post-meta">
+            <time class="dt-published" datetime="2025-12-27T23:01:18-06:00">
+                December 27, 2025
+            </time>
+            
+        </div>
+    </header>
+
+    
+
+    <div class="post-content e-content">
+        <p>Web design for Watsonfinds a sentiment analysis that predicts the evoked emotions by a piece of content.</p>
+<p>IBM was one of the first companies who started building solutions with artificial intelligence and I was amazed by this new approach, specially by the <a href="https://tone-analyzer-demo.ng.bluemix.net/?cm_mc_uid=38480465967815654102949&amp;cm_mc_sid_50200000=31230421565410294965&amp;cm_mc_sid_52640000=39140861565410294987">Tone Analyzer</a>.</p>
+<p>Inspired by this, Max Ortu and I, had the idea to create a sentiment analysis that could provide, to authors, copywriters and all kinds of content creators, insights about the emotional tones of their content and a way to determine the emotions that their audience may perceive as they read it.</p>
+<p>At first we designed a product that would connect and fetch the data from IBM Watson’s core, later on, we relied on Max’s past experience in Machine Learning to create our own data classifier, which is now the core of most of the products that we are still working on together.</p>
+<p><img src="https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg" alt="watsonfinds-app-1.jpg">
+<img src="https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg" alt="watsonfinds-app-2.jpg">
+<img src="https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg" alt="watsonfinds-app-3.jpg"></p>
+
+    </div>
+
+    
+
+    
+    <div class="post-categories">
+        <div class="category-list">
+            
+            
+            
+            <a href="/categories/case-studies" class="category-button p-category">case-studies (3)</a>
+            
+        </div>
+    </div>
+    
+
+    
+    
+    
+        
+        
+    
+    
+
+    <footer class="post-footer">
+        
+        <div class="post-actions">
+            
+            
+            
+                
+                
+                    
+                
+                <a href="https://shareopenly.org/share/?url=http%3a%2f%2flocalhost%3a1314%2f2025%2f12%2f27%2fai-content-emotion-analyzer.html&text=AI%20Content%20Emotion%20Analyzer" 
+                   class="share-link-button" target="_blank" rel="noopener noreferrer" 
+                   title="Share">
+                    <i class="fas fa-share-nodes" aria-hidden="true"></i>
+                    Share
+                </a>
+            
+            
+                <button class="copy-link-button" data-url="http://localhost:1314/2025/12/27/ai-content-emotion-analyzer.html" data-copied-text="Copied!" title="Copy Link">
+                    <i class="fas fa-copy" aria-hidden="true"></i>
+                    Copy Link
+                </button>
+            
+        </div>
+        
+        
+        
+    </footer>
+</article>
+
+    </main>
+
+    
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            
+            
+            
+                
+                <div class="footer-social">
+                    <p><a href="/contact"><i class="fas fa-envelope"></i></a>
+<a href="https://linkedin.com/in/gutifredo"><i class="fab fa-linkedin"></i></a>
+<a href="https://twitter.com/gutifredo"><i class="fab fa-x-twitter"></i></a>
+<a href="https://mastodon.design/@alfredo"><i class="fab fa-mastodon"></i></a>
+<a href="https://bsky.app/profile/alfredo.design"><i class="fab fa-bluesky"></i></a></p>
+
+                </div>
+                <script>
+                    document.querySelectorAll('.footer-social a').forEach(function(a) {
+                        a.setAttribute('target', '_blank');
+                        a.setAttribute('rel', 'noopener noreferrer');
+                    });
+                </script>
+                
+            
+
+            
+
+            
+            <p class="powered-by">
+                Powered by <a href="https://micro.blog">Micro.blog</a> +
+                <a href="https://github.com/MattSLangford/Mythos-Theme">Mythos Theme</a>.
+                <br>
+                Redesigned by <a href="https://alfredo.design">Alfredo</a>.
+            </p>
+            
+        </div>
+
+    </div>
+</footer>
+
+    
+    
+    <script src="/js/main.js" defer></script>
+    <script src="/js/theme-toggle.js" defer></script>
+    <script src="/js/avatar-tilt.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+
+    
+    
+
+    
+</body>
+</html>

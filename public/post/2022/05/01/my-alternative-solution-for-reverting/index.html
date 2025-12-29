@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Mythos Theme v1.4.14">
+
+    
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    
+    
+    <meta name="twitter:card" content="summary"><meta name="twitter:title" content="My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD">
+      <meta property="og:title" content="My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD">
+    
+    
+      <meta name="twitter:description" content="I use Adobe XD regularly for my full-time job, while Figma …">
+      <meta name="og:description" content="I use Adobe XD regularly for my full-time job, while Figma …">
+      <meta name="description" content="I use Adobe XD regularly for my full-time job, while Figma is my go-to for personal projects. Consequently, I&#39;m eternally oscillating between these two apps on a daily basis.
+Having spent the whole day on Adobe XD, transitioning to Figma is somewhat peculiar due to the contrasting scrolling direction for zoom-in and zoom-out operations. Although neither direction seems inherently correct or incorrect, for some reason, Figma&#39;s method appears more intuitive to me.">
+      <meta name="twitter:image" content="https://alfredo.design/uploads/2025/b686615707.jpg">
+          <meta property="og:image" content="https://alfredo.design/uploads/2025/b686615707.jpg"><meta name="twitter:image" content="https://alfredo.design/uploads/2025/436c012fa3.jpg">
+          <meta property="og:image" content="https://alfredo.design/uploads/2025/436c012fa3.jpg"><title>My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD | Alfredo Design</title>
+
+    
+    <link rel="author" href="/humans.txt">
+
+    
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    
+    <link rel="stylesheet" href="/css/main.css?1234567890">
+    
+    
+    
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1314/feed.xml" title="Alfredo Design">
+    
+    
+    <link rel="canonical" href="http://localhost:1314/post/2022/05/01/my-alternative-solution-for-reverting/">
+    
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1314/post/2022/05/01/my-alternative-solution-for-reverting/">
+    <meta property="og:site_name" content="Alfredo Design">
+    
+    
+  <link rel="alternate" href="http://localhost:1314/feed.xml" type="application/rss+xml" title="Alfredo Design">
+  <link rel="alternate" href="http://localhost:1314/feed.json" type="application/json" title="Alfredo Design">
+
+
+
+
+<link rel="me" href="https://micro.blog/">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="https://micro.blog//favicon.png" type="image/x-icon">
+<link rel="EditURI" type="application/rsd+xml" href="http://localhost:1314/rsd.xml">
+<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth">
+<link rel="token_endpoint" href="https://micro.blog/indieauth/token">
+<link rel="subscribe" href="https://micro.blog/users/follow">
+<link rel="webmention" href="https://micro.blog/webmention">
+<link rel="micropub" href="https://micro.blog/micropub">
+<link rel="microsub" href="https://micro.blog/microsub">
+
+
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+<link rel="stylesheet" href="/custom.css?1234567890">
+
+
+
+
+
+    
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    
+    
+</head>
+
+<body class="no-js">
+    <script>document.body.className = document.body.className.replace('no-js', 'js');</script>
+    <header class="site-header">
+    <div class="header-container h-card">
+        <div class="site-branding">
+            <div class="site-info">
+                <h1 class="site-title">
+                    <a href="/" class="u-url" rel="home">
+                        
+                            
+                        
+                        <span class="p-name">Alfredo Design</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+        
+        <nav class="site-navigation" aria-label="Main navigation">
+            
+            <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-input" aria-hidden="true">
+            <label for="mobile-menu-toggle" class="menu-toggle" aria-label="Open main navigation menu">
+                <span class="menu-toggle-text">Menu</span>
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </label>
+
+            
+            <button class="menu-toggle js-menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Open main navigation menu" type="button" style="display: none;">
+                <span class="menu-toggle-text">Menu</span>
+                <span class="hamburger" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div class="menu-backdrop" id="menu-backdrop"></div>
+            <div class="primary-menu" id="primary-menu" role="menu" aria-label="Navigation menu">
+                <div class="menu-content">
+                    <ul class="nav-menu">
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/blog/" class="nav-link Blog" role="menuitem">
+                                
+                                Blog
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/about/" class="nav-link About" role="menuitem">
+                                
+                                About
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item" role="none">
+                            <a href="/search/" class="nav-link Search" role="menuitem">
+                                
+                                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                                <span class="icon-label">Search</span>
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="nav-divider" aria-hidden="true"></li>
+                        <li class="nav-item nav-item-toggle" role="none">
+                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                                <svg class="toggle-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                                <svg class="toggle-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                                <span class="icon-label toggle-label-light">Light</span>
+                                <span class="icon-label toggle-label-dark">Dark</span>
+                            </button>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    
+
+    <main class="main-content">
+        
+<article class="post h-entry">
+    <header class="post-header">
+        
+        <h2 class="post-title p-name">My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD</h2>
+        
+        
+        <div class="post-meta">
+            <time class="dt-published" datetime="2022-05-01T12:09:00-06:00">
+                May 1, 2022
+            </time>
+            
+        </div>
+    </header>
+
+    
+
+    <div class="post-content e-content">
+        <p>I use Adobe XD regularly for my full-time job, while Figma is my go-to for personal projects. Consequently, I'm eternally oscillating between these two apps on a daily basis.</p>
+<p>Having spent the whole day on Adobe XD, transitioning to Figma is somewhat peculiar due to the contrasting scrolling direction for zoom-in and zoom-out operations. Although neither direction seems inherently correct or incorrect, for some reason, Figma's method appears more intuitive to me.</p>
+<p>However, after a <a href="https://community.adobe.com/t5/adobe-xd-discussions/mouse-zooming-scroll-direction-is-reversed/td-p/11513112">much extensive search</a> for a solution, it was disheartening to discover that neither of the applications offers the option to customize the zoom scrolling direction. The sole work-around I could find was to alternately enable or disable the scrolling direction on my Mac.</p>
+<img class="shadow-lg aligncenter wp-image-3417 size-full" src="https://alfredo.design/uploads/2025/b686615707.jpg" alt="" width="1148" height="885">
+<p>But going to "Preferences > Mouse settings" every time I needed to make the switch was a tedious process.</p>
+<p>While wishing there was a quicker way to switch the mouse scrolling direction on my mac, I did some research and I found a tool called: <a href="https://github.com/ther0n/UnnaturalScrollWheels" target="_blank" rel="noopener">UnnaturalScrollWheels</a> which exists as a solution for those who want to set the natural scrolling direction on the trackpad while maintaining the regular scrolling direction on the mouse. (Because for some reason, when toggling the "Scroll direction: Natural" option on a mac, it also changes the Trackpad scrolling direction).</p>
+<p>With this tool installed, now I simply click the icon on the menu bar > Preferences and check or uncheck the invert vertical scrolling every time I switch from AdobeXD to Figma.</p>
+<img class="wp-image-3415 size-full aligncenter" src="https://alfredo.design/uploads/2025/436c012fa3.jpg" alt="" width="401" height="380">
+<p>I hope this is found useful for those UX designers, who like me, are constantly using both apps.</p>
+
+    </div>
+
+    
+
+    
+    <div class="post-categories">
+        <div class="category-list">
+            
+            
+            
+            <a href="/categories/blogs" class="category-button p-category">blogs (1)</a>
+            
+        </div>
+    </div>
+    
+
+    
+    
+    
+        
+        
+            
+        
+    
+    
+    <aside class="post-subscribe">
+        <h3>Subscribe</h3>
+        <div class="subscribe-content">
+            <p>Subscribe to the email newsletter for this blog.</p>
+            <form method="POST" action="https://micro.blog/users/subscribe/">
+                <input type="email" name="email" placeholder="Your email address" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </aside>
+    
+
+    <footer class="post-footer">
+        
+        <div class="post-actions">
+            
+            
+            
+                
+                
+                    
+                
+                <a href="https://shareopenly.org/share/?url=http%3a%2f%2flocalhost%3a1314%2fpost%2f2022%2f05%2f01%2fmy-alternative-solution-for-reverting%2f&text=My%20alternative%20solution%20for%20reverting%20the%20mouse%20zooming%20scroll%20direction%20when%20switching%20between%20Figma%20and%20Adobe%20XD" 
+                   class="share-link-button" target="_blank" rel="noopener noreferrer" 
+                   title="Share">
+                    <i class="fas fa-share-nodes" aria-hidden="true"></i>
+                    Share
+                </a>
+            
+            
+                <button class="copy-link-button" data-url="http://localhost:1314/post/2022/05/01/my-alternative-solution-for-reverting/" data-copied-text="Copied!" title="Copy Link">
+                    <i class="fas fa-copy" aria-hidden="true"></i>
+                    Copy Link
+                </button>
+            
+        </div>
+        
+        
+        
+    </footer>
+</article>
+
+    </main>
+
+    
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            
+            
+            
+                
+                <div class="footer-social">
+                    <p><a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a></p>
+<p><a href="https://twitter.com/yourhandle" aria-label="Twitter/X"><i class="ph ph-x-logo"></i></a></p>
+<p><a href="https://mastodon.social/@yourhandle" aria-label="Mastodon"><i class="ph ph-mastodon-logo"></i></a></p>
+<p><a href="https://bsky.app/profile/yourhandle.bsky.social" aria-label="Bluesky"><i class="ph ph-butterfly"></i></a></p>
+
+                </div>
+                <script>
+                    document.querySelectorAll('.footer-social a').forEach(function(a) {
+                        a.setAttribute('target', '_blank');
+                        a.setAttribute('rel', 'noopener noreferrer');
+                    });
+                </script>
+                
+            
+
+            
+
+            
+            <p class="powered-by">
+                Powered by <a href="https://micro.blog">Micro.blog</a> +
+                <a href="https://github.com/MattSLangford/Mythos-Theme">Mythos Theme</a>.
+                <br>
+                Designed by <a href="https://mattlangford.com">Matt Langford</a>.
+            </p>
+            
+        </div>
+
+    </div>
+</footer>
+
+    
+    
+    <script src="/js/main.js" defer></script>
+    <script src="/js/theme-toggle.js" defer></script>
+    <script src="/js/avatar-tilt.js" defer></script>
+
+    
+    
+
+    
+</body>
+</html>
