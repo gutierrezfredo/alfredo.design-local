@@ -3,7 +3,7 @@ title: "About"
 navigation: true
 menu: main
 weight: 2
-date: 2025-12-28T16:58:10-0600
+date: 2025-12-28T19:43:24-0600
 url: /about/
 ---
 
@@ -14,10 +14,10 @@ Over the past 7 years, I've helped scale startups and companies by developing cu
 
 Outside of work, I’m passionate about surfing, music, learning languages, photography, traveling, and poetry.
 
-I share my thoughts and tutorials on design, projects, and personal life on my [blog](https://alfredo.design/blog/). You can also see what I’m currently working on in my [professional changelog](https://alfredo.design/logs/).
+I share my thoughts and tutorials on design, projects, and personal life on my [blog](/blog/). You can also see what I’m currently working on in my [professional changelog](/logs/).
 <br><br>
 
-<a href="/contact" class="button">View my resume</a> · <a href="/contact" class="button">Contact me</a>
+<a href="https://drive.google.com/file/d/1qzdvYPIDjeQbqyxX6zNp946I0ztc7ezp/view?usp=sharing" class="button" style="margin-right:.5rem;">View my resume</a>  <a href="/contact" class="button">Contact me</a>
 
 ---
 ### Work History

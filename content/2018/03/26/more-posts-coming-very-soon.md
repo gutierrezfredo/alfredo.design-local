@@ -13,7 +13,7 @@ categories:
 - "logs"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/24/alfredo.design/41177f92c116eafc402797739e77a002.png
 opengraph:
-  title: "Alfredo - More posts coming very soon!"
+  title: "Alfredo Gutierrez - More posts coming very soon!"
   image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/24/5682166.png
 url: "/2018/03/26/more-posts-coming-very-soon.html"
 ---

@@ -24,10 +24,10 @@
       <meta name="description" content="UX/UI design of a web app that tells social media influencers how people feel about their brands.
 A web app that works as a social media sentiment analysis tool to inform companies and influencers about how people feel regarding their brands by analyzing the emotional tone of the comments made by their audiences on their posts.
 The app will use AI to scan and analyze every comment made on a specific post and show the predominant emotion. This will allow influencers and large accounts to filter comments by emotions and reach out to individuals who may be having a challenging experience with their brand.">
-      <meta name="twitter:image" content="https://alfredo.design/uploads/2025/account-opt-1.jpg">
-          <meta property="og:image" content="https://alfredo.design/uploads/2025/account-opt-1.jpg"><meta name="twitter:image" content="https://alfredo.design/uploads/2025/analyzer-opt.jpg">
-          <meta property="og:image" content="https://alfredo.design/uploads/2025/analyzer-opt.jpg"><meta name="twitter:image" content="https://alfredo.design/uploads/2025/comments-opt.jpg">
-          <meta property="og:image" content="https://alfredo.design/uploads/2025/comments-opt.jpg"><title>Social Sentiment Dashboard | Alfredo Design</title>
+      <meta name="twitter:image" content="/uploads/2025/account-opt-1.jpg">
+          <meta property="og:image" content="/uploads/2025/account-opt-1.jpg"><meta name="twitter:image" content="/uploads/2025/analyzer-opt.jpg">
+          <meta property="og:image" content="/uploads/2025/analyzer-opt.jpg"><meta name="twitter:image" content="/uploads/2025/comments-opt.jpg">
+          <meta property="og:image" content="/uploads/2025/comments-opt.jpg"><title>Social Sentiment Dashboard | Alfredo Design</title>
 
     
     <link rel="author" href="/humans.txt">
@@ -63,7 +63,7 @@ The app will use AI to scan and analyze every comment made on a specific post an
 
 
 
-<link rel="me" href="https://micro.blog/">
+<link rel="me" href="https://micro.blog/alfredo">
 
 
 
@@ -85,9 +85,9 @@ The app will use AI to scan and analyze every comment made on a specific post an
   
 
 
-<link rel="shortcut icon" href="https://alfredo.design/uploads/2025/16e37fd268.png" type="image/png">
-<link rel="icon" href="https://alfredo.design/uploads/2025/16e37fd268.png" type="image/png">
-<link rel="apple-touch-icon" href="https://alfredo.design/uploads/2025/16e37fd268.png">
+<link rel="shortcut icon" href="/uploads/2025/16e37fd268.png" type="image/png">
+<link rel="icon" href="/uploads/2025/16e37fd268.png" type="image/png">
+<link rel="apple-touch-icon" href="/uploads/2025/16e37fd268.png">
 <link rel="EditURI" type="application/rsd+xml" href="http://localhost:1314/rsd.xml">
 <link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth">
 <link rel="token_endpoint" href="https://micro.blog/indieauth/token">
@@ -106,11 +106,10 @@ The app will use AI to scan and analyze every comment made on a specific post an
 
 
     
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
+    <link rel="stylesheet" href="/css/phosphor-regular-style.css">
+    <link rel="stylesheet" href="/css/phosphor-bold-style.css">
+    <link rel="stylesheet" href="/css/phosphor-fill-style.css">
     
     
 </head>
@@ -143,7 +142,7 @@ The app will use AI to scan and analyze every comment made on a specific post an
         <div class="site-branding">
             <div class="site-info">
                 
-                <a href="/" class="back-button" aria-label="Go back" onclick="event.preventDefault(); history.back();">
+                <a href="/" class="back-button" aria-label="Go back" onclick="if(document.referrer && document.referrer.includes(location.hostname) && history.length > 1){event.preventDefault(); history.back();}">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                     <span>Back</span>
                 </a>
@@ -283,6 +282,8 @@ The app will use AI to scan and analyze every comment made on a specific post an
                 December 27, 2025
             </time>
             
+            <span class="p-author" style="display: none;">Alfredo Gutiérrez</span>
+            
         </div>
     </header>
 
@@ -294,8 +295,8 @@ The app will use AI to scan and analyze every comment made on a specific post an
 <p>The app will use AI to scan and analyze every comment made on a specific post and show the predominant emotion. This will allow influencers and large accounts to filter comments by emotions and reach out to individuals who may be having a challenging experience with their brand.</p>
 <p>The tool provides insights about specific emotions, such as anger and joy, over time. This allows the company or influencer to look for sudden changes or ongoing trends and see how sentiment varies across their audience.</p>
 <p>The product never launched because it ended up being too much work for two people. However, it was a fun project that provided us with a lot of experience working with AI.</p>
-<p><img src="https://alfredo.design/uploads/2025/account-opt-1.jpg" alt="account-opt-1.jpg">
-<img src="https://alfredo.design/uploads/2025/analyzer-opt.jpg" alt="analyzer-opt.jpg"><img src="https://alfredo.design/uploads/2025/comments-opt.jpg" alt="comments-opt.jpg"></p>
+<p><img src="/uploads/2025/account-opt-1.jpg" alt="account-opt-1.jpg">
+<img src="/uploads/2025/analyzer-opt.jpg" alt="analyzer-opt.jpg"><img src="/uploads/2025/comments-opt.jpg" alt="comments-opt.jpg"></p>
 
     </div>
 
@@ -334,13 +335,13 @@ The app will use AI to scan and analyze every comment made on a specific post an
                 <a href="https://shareopenly.org/share/?url=http%3a%2f%2flocalhost%3a1314%2f2025%2f12%2f27%2fsocial-sentiment-dashboard.html&text=Social%20Sentiment%20Dashboard" 
                    class="share-link-button" target="_blank" rel="noopener noreferrer" 
                    title="Share">
-                    <i class="fas fa-share-nodes" aria-hidden="true"></i>
+                    <i class="ph ph-share-network" aria-hidden="true"></i>
                     Share
                 </a>
             
             
                 <button class="copy-link-button" data-url="http://localhost:1314/2025/12/27/social-sentiment-dashboard.html" data-copied-text="Copied!" title="Copy Link">
-                    <i class="fas fa-copy" aria-hidden="true"></i>
+                    <i class="ph ph-copy" aria-hidden="true"></i>
                     Copy Link
                 </button>
             
@@ -363,11 +364,10 @@ The app will use AI to scan and analyze every comment made on a specific post an
             
                 
                 <div class="footer-social">
-                    <p><a href="/contact"><i class="fas fa-envelope"></i></a>
-<a href="https://linkedin.com/in/gutifredo"><i class="fab fa-linkedin"></i></a>
-<a href="https://twitter.com/gutifredo"><i class="fab fa-x-twitter"></i></a>
-<a href="https://mastodon.design/@alfredo"><i class="fab fa-mastodon"></i></a>
-<a href="https://bsky.app/profile/alfredo.design"><i class="fab fa-bluesky"></i></a></p>
+                    <p><a href="/contact"><i class="ph ph-envelope"></i></a>
+<a href="https://linkedin.com/in/gutifredo"><i class="ph ph-linkedin-logo"></i></a>
+<a href="https://mastodon.design/@alfredo"><i class="ph ph-mastodon-logo"></i></a>
+<a href="https://bsky.app/profile/alfredo.design"><i class="ph ph-butterfly"></i></a></p>
 
                 </div>
                 <script>

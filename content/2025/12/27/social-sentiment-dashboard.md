@@ -12,21 +12,21 @@ type: post
 categories:
 - "case-studies"
 images:
-- https://alfredo.design/uploads/2025/account-opt-1.jpg
-- https://alfredo.design/uploads/2025/analyzer-opt.jpg
-- https://alfredo.design/uploads/2025/comments-opt.jpg
+- /uploads/2025/account-opt-1.jpg
+- /uploads/2025/analyzer-opt.jpg
+- /uploads/2025/comments-opt.jpg
 photos:
-- https://alfredo.design/uploads/2025/account-opt-1.jpg
-- https://alfredo.design/uploads/2025/analyzer-opt.jpg
-- https://alfredo.design/uploads/2025/comments-opt.jpg
+- /uploads/2025/account-opt-1.jpg
+- /uploads/2025/analyzer-opt.jpg
+- /uploads/2025/comments-opt.jpg
 photos_with_metadata:
-- url: https://alfredo.design/uploads/2025/account-opt-1.jpg
+- url: /uploads/2025/account-opt-1.jpg
   width: 0
   height: 0
-- url: https://alfredo.design/uploads/2025/analyzer-opt.jpg
+- url: /uploads/2025/analyzer-opt.jpg
   width: 0
   height: 0
-- url: https://alfredo.design/uploads/2025/comments-opt.jpg
+- url: /uploads/2025/comments-opt.jpg
   width: 0
   height: 0
 url: "/2025/12/27/social-sentiment-dashboard.html"
@@ -57,5 +57,5 @@ The tool provides insights about specific emotions, such as anger and joy, over 
 
 The product never launched because it ended up being too much work for two people. However, it was a fun project that provided us with a lot of experience working with AI.
 
-![account-opt-1.jpg](https://alfredo.design/uploads/2025/account-opt-1.jpg)
-![analyzer-opt.jpg](https://alfredo.design/uploads/2025/analyzer-opt.jpg)![comments-opt.jpg](https://alfredo.design/uploads/2025/comments-opt.jpg)
+![account-opt-1.jpg](/uploads/2025/account-opt-1.jpg)
+![analyzer-opt.jpg](/uploads/2025/analyzer-opt.jpg)![comments-opt.jpg](/uploads/2025/comments-opt.jpg)

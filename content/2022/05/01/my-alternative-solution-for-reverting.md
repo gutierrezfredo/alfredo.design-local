@@ -13,21 +13,21 @@ categories:
 - "blogs"
 thumbnail: https://s3.amazonaws.com/micro.blog/thumbnails/2025/12/27/alfredo.design/9e8fb73d90df97db0cc7e34a42b50a8b.png
 opengraph:
-  title: "Alfredo - My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD"
+  title: "Alfredo Gutierrez - My alternative solution for reverting the mouse zooming scroll direction when switching between Figma and Adobe XD"
   image: https://s3.amazonaws.com/micro.blog/opengraph/2025/12/26/5682170.png
 images:
-- https://alfredo.design/uploads/2025/final-1030x681.jpg
-- https://alfredo.design/uploads/2025/webp.net-resizeimage-opt.png
+- /uploads/2025/final-1030x681.jpg
+- /uploads/2025/webp.net-resizeimage-opt.png
 photos:
-- https://alfredo.design/uploads/2025/final-1030x681.jpg
+- /uploads/2025/final-1030x681.jpg
 photos_with_metadata:
-- url: https://alfredo.design/uploads/2025/final-1030x681.jpg
+- url: /uploads/2025/final-1030x681.jpg
   width: 0
   height: 0
 url: "/2022/05/01/my-alternative-solution-for-reverting.html"
 ---
 
-![final-1030x681.jpg](https://alfredo.design/uploads/2025/final-1030x681.jpg)
+![final-1030x681.jpg](/uploads/2025/final-1030x681.jpg)
 
 I use Adobe XD regularly for my full-time job, while Figma is my go-to for personal projects. Consequently, I’m eternally oscillating between these two apps on a daily basis.
 
@@ -35,7 +35,7 @@ Having spent the whole day on Adobe XD, transitioning to Figma is somewhat pecul
 
 However, after a [much extensive search](https://community.adobe.com/t5/adobe-xd-discussions/mouse-zooming-scroll-direction-is-reversed/td-p/11513112) for a solution, it was disheartening to discover that neither of the applications offers the option to customize the zoom scrolling direction. The sole work-around I could find was to alternately enable or disable the scrolling direction on my Mac.
 
-![Webp.net-resizeimage_opt.png](https://alfredo.design/uploads/2025/webp.net-resizeimage-opt.png)
+![Webp.net-resizeimage_opt.png](/uploads/2025/webp.net-resizeimage-opt.png)
 
 But going to “Preferences > Mouse settings” every time I needed to make the switch was a tedious process.
 

@@ -12,21 +12,21 @@ type: post
 categories:
 - "case-studies"
 images:
-- https://alfredo.design/uploads/2025/fbo-dashboard-opt.jpg
-- https://alfredo.design/uploads/2025/fbo-tasklist-opt-3.jpg
-- https://alfredo.design/uploads/2025/fbo-modal-opt-1.jpg
+- /uploads/2025/fbo-dashboard-opt.jpg
+- /uploads/2025/fbo-tasklist-opt-3.jpg
+- /uploads/2025/fbo-modal-opt-1.jpg
 photos:
-- https://alfredo.design/uploads/2025/fbo-dashboard-opt.jpg
-- https://alfredo.design/uploads/2025/fbo-tasklist-opt-3.jpg
-- https://alfredo.design/uploads/2025/fbo-modal-opt-1.jpg
+- /uploads/2025/fbo-dashboard-opt.jpg
+- /uploads/2025/fbo-tasklist-opt-3.jpg
+- /uploads/2025/fbo-modal-opt-1.jpg
 photos_with_metadata:
-- url: https://alfredo.design/uploads/2025/fbo-dashboard-opt.jpg
+- url: /uploads/2025/fbo-dashboard-opt.jpg
   width: 0
   height: 0
-- url: https://alfredo.design/uploads/2025/fbo-tasklist-opt-3.jpg
+- url: /uploads/2025/fbo-tasklist-opt-3.jpg
   width: 0
   height: 0
-- url: https://alfredo.design/uploads/2025/fbo-modal-opt-1.jpg
+- url: /uploads/2025/fbo-modal-opt-1.jpg
   width: 0
   height: 0
 url: "/2025/12/27/govops-contractor-portal.html"
@@ -56,4 +56,4 @@ The biggest challenge was that the public solicitations published by the governm
 As a result, I designed a web application that empowered the user to effortlessly find opportunities that fit their business capabilities, also bringing the clarity to follow up and keep track of any updates during the process. All this in a software that could be easily integrated with the company’s way of doing business.
 
 
-![fbo-dashboard_opt.jpg](https://alfredo.design/uploads/2025/fbo-dashboard-opt.jpg)![fbo-tasklist_opt-3.jpg](https://alfredo.design/uploads/2025/fbo-tasklist-opt-3.jpg)![fbo-modal_opt-1.jpg](https://alfredo.design/uploads/2025/fbo-modal-opt-1.jpg)
+![fbo-dashboard_opt.jpg](/uploads/2025/fbo-dashboard-opt.jpg)![fbo-tasklist_opt-3.jpg](/uploads/2025/fbo-tasklist-opt-3.jpg)![fbo-modal_opt-1.jpg](/uploads/2025/fbo-modal-opt-1.jpg)

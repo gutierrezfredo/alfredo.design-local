@@ -1,9 +1,9 @@
 ---
 title: "Blog"
-navigation: false
+navigation: true
 menu: main
-weight: 2
-date: 2025-12-28T16:58:10-0600
+weight: 3
+date: 2025-12-28T18:17:24-0600
 url: /blog/
 ---
 

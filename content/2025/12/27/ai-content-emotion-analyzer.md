@@ -12,21 +12,21 @@ type: post
 categories:
 - "case-studies"
 images:
-- https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg
-- https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg
-- https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg
+- /uploads/2025/watsonfinds-app-1.jpg
+- /uploads/2025/watsonfinds-app-2.jpg
+- /uploads/2025/watsonfinds-app-3.jpg
 photos:
-- https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg
-- https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg
-- https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg
+- /uploads/2025/watsonfinds-app-1.jpg
+- /uploads/2025/watsonfinds-app-2.jpg
+- /uploads/2025/watsonfinds-app-3.jpg
 photos_with_metadata:
-- url: https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg
+- url: /uploads/2025/watsonfinds-app-1.jpg
   width: 0
   height: 0
-- url: https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg
+- url: /uploads/2025/watsonfinds-app-2.jpg
   width: 0
   height: 0
-- url: https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg
+- url: /uploads/2025/watsonfinds-app-3.jpg
   width: 0
   height: 0
 url: "/2025/12/27/ai-content-emotion-analyzer.html"
@@ -55,6 +55,6 @@ Inspired by this, Max Ortu and I, had the idea to create a sentiment analysis th
 
 At first we designed a product that would connect and fetch the data from IBM Watson’s core, later on, we relied on Max’s past experience in Machine Learning to create our own data classifier, which is now the core of most of the products that we are still working on together.
 
-![watsonfinds-app-1.jpg](https://alfredo.design/uploads/2025/watsonfinds-app-1.jpg)
-![watsonfinds-app-2.jpg](https://alfredo.design/uploads/2025/watsonfinds-app-2.jpg)
-![watsonfinds-app-3.jpg](https://alfredo.design/uploads/2025/watsonfinds-app-3.jpg)
+![watsonfinds-app-1.jpg](/uploads/2025/watsonfinds-app-1.jpg)
+![watsonfinds-app-2.jpg](/uploads/2025/watsonfinds-app-2.jpg)
+![watsonfinds-app-3.jpg](/uploads/2025/watsonfinds-app-3.jpg)
