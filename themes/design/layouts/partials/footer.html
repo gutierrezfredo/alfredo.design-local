@@ -1,0 +1,35 @@
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            {{/* Social icons from /social/ page */}}
+            {{ $footer := .Site.GetPage "/social" }}
+            {{ with $footer }}
+                {{ if .Content }}
+                <div class="footer-social">
+                    {{ .Content }}
+                </div>
+                <script>
+                    document.querySelectorAll('.footer-social a').forEach(function(a) {
+                        a.setAttribute('target', '_blank');
+                        a.setAttribute('rel', 'noopener noreferrer');
+                    });
+                </script>
+                {{ end }}
+            {{ end }}
+
+            {{ if templates.Exists "partials/custom_footer.html" }}
+                {{ partial "custom_footer.html" . }}
+            {{ end }}
+
+            {{ if not .Site.Params.hide_footer_credits }}
+            <p class="powered-by">
+                {{ T "PoweredBy" }} <a href="https://micro.blog">Micro.blog</a> +
+                <a href="https://github.com/MattSLangford/Mythos-Theme">Mythos Theme</a>.
+                <br>
+                Redesigned by <a href="https://alfredo.design">Alfredo</a>.
+            </p>
+            {{ end }}
+        </div>
+
+    </div>
+</footer>

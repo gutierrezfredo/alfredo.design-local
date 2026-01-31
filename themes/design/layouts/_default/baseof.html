@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Mythos Theme v1.4.14">
+
+    <!-- Prevent flash: set theme before CSS loads -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+    
+    <!-- Meta tags and title -->
+    <meta name="twitter:card" content="summary">
+    {{- with .Title -}}
+      <meta name="twitter:title" content="{{ . }}">
+      <meta property="og:title" content="{{ . }}">
+    {{ else }}
+      <meta name="twitter:title" content="{{ .Site.Title }}">
+      <meta property="og:title" content="{{ .Site.Title }}">
+    {{ end }}
+    {{ if .IsHome }}
+      <meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 160 }}">
+      <meta name="og:description" content="{{ .Site.Params.itunes_description | truncate 160 }}">
+      <meta name="description" content="{{ .Site.Params.itunes_description }}">
+      <!-- Use avatar as social media image for home page -->
+      {{ if .Site.Params.custom_avatar }}
+        <meta name="twitter:image" content="{{ .Site.Params.custom_avatar }}">
+        <meta property="og:image" content="{{ .Site.Params.custom_avatar }}">
+      {{ else }}
+        <meta name="twitter:image" content="{{ .Site.Params.author.avatar }}">
+        <meta property="og:image" content="{{ .Site.Params.author.avatar }}">
+      {{ end }}
+    {{ else }}
+      <meta name="twitter:description" content="{{ .Summary | truncate 60 }}">
+      <meta name="og:description" content="{{ .Summary | truncate 60 }}">
+      <meta name="description" content="{{ .Summary }}">
+      {{ if .Params.photos }}
+        {{- range .Params.photos -}}
+          <meta name="twitter:image" content="{{ . }}">
+          <meta property="og:image" content="{{ . }}">
+        {{- end -}}
+      {{ else }}
+        {{ with .Params.opengraph.image }}
+          <meta name="twitter:image" content="{{ . }}">
+          <meta property="og:image" content="{{ . }}">
+        {{ end }}
+      {{ end }}
+    {{- end -}}
+    <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ .Title }} | {{ .Site.Title }}{{ else }}{{ delimit (split .Summary " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
+
+    <!-- Author information -->
+    <link rel="author" href="/humans.txt">
+
+    <!-- Fediverse Creator for enhanced link previews -->
+    {{ if .Site.Params.fediverse_creator }}
+    <meta name="fediverse:creator" content="{{ .Site.Params.fediverse_creator }}">
+    {{ end }}
+    
+    <!-- Google Fonts - Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    {{ if templates.Exists "partials/microhook-uncss.html" }}
+    {{ partial "microhook-uncss.html" . }}
+    {{ else }}
+    <link rel="stylesheet" href="/css/main.css?{{ .Site.Params.theme_seconds }}">
+    {{ end }}
+    
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" href="{{ "/feed.xml" | absURL }}" title="{{ .Site.Title }}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ .Permalink }}">
+    
+    <!-- OpenGraph -->
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    
+    {{ partial "microblog_head.html" . }}
+    
+    <!-- Phosphor Icons -->
+    <link rel="stylesheet" href="/css/phosphor-regular-style.css">
+    <link rel="stylesheet" href="/css/phosphor-bold-style.css">
+    <link rel="stylesheet" href="/css/phosphor-fill-style.css">
+    
+    {{ if .Site.Params.custom_head_html }}
+    {{ .Site.Params.custom_head_html | safeHTML }}
+    {{ end }}
+</head>
+
+<body class="no-js">
+    <script>
+        document.body.className = document.body.className.replace('no-js', 'js');
+        // Random tint for subscribe card
+        (function() {
+            var tints = [
+                'rgba(99, 179, 237, 0.08)',   // blue
+                'rgba(154, 230, 180, 0.08)',  // green
+                'rgba(246, 173, 85, 0.08)',   // orange
+                'rgba(183, 148, 244, 0.08)'   // purple
+            ];
+            var darkTints = [
+                'rgba(99, 179, 237, 0.12)',
+                'rgba(154, 230, 180, 0.12)',
+                'rgba(246, 173, 85, 0.12)',
+                'rgba(183, 148, 244, 0.12)'
+            ];
+            var idx = Math.floor(Math.random() * tints.length);
+            var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            document.documentElement.style.setProperty('--subscribe-tint', isDark ? darkTints[idx] : tints[idx]);
+            document.documentElement.style.setProperty('--subscribe-tint-idx', idx);
+        })();
+    </script>
+    {{ partial "header.html" . }}
+
+    {{ if templates.Exists "partials/microhook-after-header.html" }}
+    {{ partial "microhook-after-header.html" . }}
+    {{ end }}
+
+    <main class="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ if templates.Exists "partials/microhook-sidebar.html" }}
+    {{ partial "microhook-sidebar.html" . }}
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+    
+    <!-- JavaScript -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/theme-toggle.js" defer></script>
+    <script src="/js/avatar-tilt.js" defer></script>
+    <script src="/js/lightbox.js" defer></script>
+
+    <!-- Three.js available for future use -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script> -->
+
+    {{ if .Site.Params.custom_body_html }}
+    {{ .Site.Params.custom_body_html | safeHTML }}
+    {{ end }}
+</body>
+</html>

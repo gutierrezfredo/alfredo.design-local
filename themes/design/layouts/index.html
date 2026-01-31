@@ -1,0 +1,126 @@
+{{ define "main" }}
+<div class="portfolio-page">
+
+    <!-- Hero Section - pulls from /intro/ page -->
+    {{ $intro := .Site.GetPage "/intro" }}
+    {{ with $intro }}
+    <section class="portfolio-hero">
+        {{ $content := .RawContent }}
+        {{ $lines := split $content "\n" }}
+        {{ range $lines }}
+            {{ if hasPrefix . "![" }}
+                <div class="hero-avatar">{{ . | markdownify }}</div>
+            {{ else if hasPrefix . "<h1>" }}
+                <div class="hero-name">{{ . | safeHTML }}</div>
+            {{ else if hasPrefix . "# " }}
+                <h1 class="hero-name">{{ strings.TrimPrefix "# " . }}</h1>
+            {{ else if hasPrefix . "## " }}
+                <p class="hero-title">{{ strings.TrimPrefix "## " . }}</p>
+            {{ else if and (ne . "") (not (hasPrefix . "#")) }}
+                <p class="hero-intro">{{ . | markdownify }}</p>
+            {{ end }}
+        {{ end }}
+    </section>
+    {{ else }}
+    <!-- Fallback if no intro page exists -->
+    <section class="portfolio-hero">
+        <h1 class="hero-name">{{ .Site.Params.portfolio_name | default .Site.Params.author.name | default .Site.Title }}</h1>
+        <p class="hero-title">{{ .Site.Params.portfolio_title | default "Product Designer" }}</p>
+    </section>
+    {{ end }}
+
+    <!-- Case Studies -->
+    <section class="case-studies">
+        {{ $allPosts := where .Site.RegularPages "Type" "post" }}
+        {{ range $allPosts }}
+            {{ $isCaseStudy := false }}
+            {{ range .Params.categories }}
+                {{ if eq (. | lower) "case-studies" }}
+                    {{ $isCaseStudy = true }}
+                {{ end }}
+            {{ end }}
+            {{ if $isCaseStudy }}
+            {{ $categories := .Params.categories }}
+            {{ $category := "" }}
+            {{ if $categories }}
+                {{ $category = index $categories 0 }}
+            {{ end }}
+
+            <article class="case-study-card">
+                <div class="case-study-content">
+                    {{/* Title */}}
+                    <h2 class="case-study-title"><a href="{{ .Permalink }}">{{ .Title | default "Untitled Project" }}</a></h2>
+
+                    {{/* Meta: Category & Year */}}
+                    <p class="case-study-meta">
+                        {{ if $category }}<span class="meta-category">{{ $category | title }}</span>{{ end }}
+                        <span class="meta-year">{{ .Date.Format "2006" }}</span>
+                    </p>
+
+                    {{/* Description */}}
+                    <p class="case-study-description">
+                        {{ .Summary | plainify | truncate 150 }}
+                    </p>
+
+                    {{/* Read More Button */}}
+                    <a href="{{ .Permalink }}" class="case-study-button">
+                        Read More <span class="button-arrow">→</span>
+                    </a>
+                </div>
+
+                <a href="{{ .Permalink }}" class="case-study-images">
+                    {{ with .Params.photos }}
+                        {{ range first 3 . }}
+                        <div class="case-study-image">
+                            <img src="{{ . }}" alt="Project screenshot" loading="lazy">
+                        </div>
+                        {{ end }}
+                    {{ else }}
+                        <div class="case-study-placeholder">
+                            <span>{{ substr (.Title | default "P") 0 1 | upper }}</span>
+                        </div>
+                    {{ end }}
+                </a>
+            </article>
+            {{ end }}
+        {{ end }}
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="latest-posts">
+        <h2 class="section-title">Latest from the Blog</h2>
+        <div class="blog-list">
+            {{ $blogPosts := slice }}
+            {{ range where .Site.RegularPages "Type" "post" }}
+                {{ $isBlog := false }}
+                {{ range .Params.categories }}
+                    {{ if eq (. | lower) "blogs" }}
+                        {{ $isBlog = true }}
+                    {{ end }}
+                {{ end }}
+                {{ if $isBlog }}
+                    {{ $blogPosts = $blogPosts | append . }}
+                {{ end }}
+            {{ end }}
+            {{ range first 2 $blogPosts }}
+            {{ $post := . }}
+            <article class="blog-item">
+                <div class="blog-item-content">
+                    <span class="blog-item-date">{{ .Date.Format "January 2, 2006" }}</span>
+                    <h3 class="blog-item-title">
+                        <a href="{{ .Permalink }}">{{ .Title | default "Untitled" }}</a>
+                    </h3>
+                    <a href="{{ .Permalink }}" class="blog-item-link">Read <span>→</span></a>
+                </div>
+                {{ with .Params.photos }}
+                <a href="{{ $post.Permalink }}" class="blog-item-image">
+                    <img src="{{ index . 0 }}" alt="{{ $post.Title }}" loading="lazy">
+                </a>
+                {{ end }}
+            </article>
+            {{ end }}
+        </div>
+    </section>
+
+</div>
+{{ end }}

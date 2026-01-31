@@ -1,0 +1,84 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Hugo
+/public/
+/resources/_gen/
+hugo_stats.json
+.hugo_build.lock
+/resources/
+
+# Micro.blog
+.microblog/
+
+# IDE and Editors
+.vscode/
+.idea/
+.nova/
+*.swp
+*.swo
+*~
+
+# Claude Code specific files
+CLAUDE.md
+
+# Logs
+*.log
+
+# Node.js (if using for development)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# CSS/SCSS build artifacts
+*.css.map
+*.scss.map
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# OS-specific files
+.fuse_hidden*
+.nfs*

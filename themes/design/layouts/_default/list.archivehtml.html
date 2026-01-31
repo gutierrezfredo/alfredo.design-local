@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="archive-page">
+    <header class="archive-header">
+        <h1 class="archive-title">{{ .Title }}</h1>
+        
+        {{ if .Description }}
+        <div class="archive-description">{{ .Description | markdownify }}</div>
+        {{ end }}
+    </header>
+    
+    {{ if not .Site.Params.hide_archive_categories }}
+    {{ $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+    {{ if gt (len $list) 0 }}
+    <div class="archive-section">
+        <h2>{{ T "Categories" }}</h2>
+        <ul class="archive-categories">
+            {{ range $list }}
+            <li><a href="{{ .Permalink }}" class="category-button">{{ .Title }} ({{ len .Pages }})</a></li>
+            {{ end }}
+        </ul>
+    </div>
+    {{ end }}
+    {{ end }}
+    
+    <div class="archive-section">
+        <h2>{{ T "AllPosts" }}</h2>
+    </div>
+    
+    {{ $allPosts := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+    {{ if $allPosts }}
+    <section class="archive-posts-list" aria-label="All blog posts">
+        {{ range $allPosts }}
+        <article class="archive-post-item h-entry">
+            <div class="archive-post-date">
+                <a href="{{ .Permalink }}" class="archive-date-link u-url">
+                    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                        {{ .Date | time.Format ":date_long" }}
+                    </time>
+                </a>
+            </div>
+            <div class="archive-post-content">
+                {{ if .Title }}
+                    <h3 class="archive-post-title p-name">{{ .Title }}</h3>
+                {{ else }}
+                    {{ $content := .Content | plainify }}
+                    {{ $summary := substr $content 0 50 }}
+                    <span class="archive-post-summary e-content">{{ $summary }}{{ if gt (len $content) 50 }}...{{ end }}</span>
+                {{ end }}
+            </div>
+        </article>
+        {{ end }}
+    </section>
+    {{ else }}
+    <div class="empty-list">
+        <p>{{ T "NoPostsFound" }}</p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}
