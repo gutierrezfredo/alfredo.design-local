@@ -1,0 +1,3 @@
+[submodule "themes/design"]
+	path = themes/design
+	url = git@github.com:gutierrezfredo/alfredo.design-theme.git
